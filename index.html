@@ -1,73 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    .logo {
-        border: 3px solid #990000;
-        height: 100px;
-        width: 100px;
-        background-color: darkgray;
-        float: left;
-        margin: 7px 7px 7px 0;
-    }
-
-    .border {
-        border: 3px solid #990000;
-        color: black;
-        background-color: darkgray;
-    }
-
-    .bordercenter {
-        border: 3px solid #990000;
-        text-align: center;
-        color: black;
-        background-color: darkgray;
-    }
-    .borderright{
-        color: black;
-        background-color: darkgray;
-        float: right;
-        margin: 7px 0 15px 7px;
-        border: 3px solid #990000;
-
-    }
-
-    body {
-        background: url("images/backgroundn.jpg");
-    }
-
-    ul.hr {
-        margin: 0;
-        padding: 4px;
-    }
-
-    ul.hr li {
-        display: inline;
-        padding: 3px;
-        color: black;
-        background-color: darkgray;
-    }
-</style>
 <head>
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <title>Домашняя Работа</title>
+    <style>
+        body {
+            background: url("images/backgroundn.jpg");
+        }
+    </style>
 </head>
 <body>
-<header class="border">
-    <div class="Logo">
-        <img class="logo" src="images/Logo.png" alt="Logo">
-        <ul class="hr" style="height: 120px">
+<header class="header">
+        <img class="img" src="images/Logo.png" alt="Logo">
+        <ul class="hr">
             <li><a href="#">Пункт 1</a></li>
             <li><a href="#">Пункт 2</a></li>
             <li><a href="#">Пункт 3</a></li>
         </ul>
-    </div>
 
 </header>
-</br>
+<br>
 <article>
     <div class="bordercenter">
-        <h1>Заголовок 1</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, assumenda consequatur cumque dolores
+        <h1 class="head">Заголовок 1</h1>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, assumenda consequatur cumque dolores
             earum incidunt inventore ipsam modi odit quis recusandae rem repellat tempore, vel voluptatem. Dignissimos
             earum esse et illo iusto necessitatibus omnis quas rem voluptates voluptatum? Accusamus accusantium aperiam
             beatae blanditiis consequatur enim esse est expedita fugit ipsam laborum nesciunt odio pariatur perspiciatis
@@ -84,10 +41,10 @@
             sapiente sint temporibus voluptates!</p>
     </div>
 </article>
-</br>
+<br>
 <footer class="bordercenter">
     <div class="Menu copy">
-        <ul class="hr">
+        <ul class="hr1">
             <li><a href="#">Пункт 1</a></li>
             <li><a href="#">Пункт 2</a></li>
             <li><a href="#">Пункт 3</a></li>

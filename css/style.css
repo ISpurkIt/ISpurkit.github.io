@@ -1,0 +1,71 @@
+.header {
+    border: 3px solid #990000;
+    background-color: darkgray;
+    height: 136px;
+}
+.img {
+    border: 3px solid #990000;
+    height: 100px;
+    width: 100px;
+    background-color: darkgray;
+    float: left;
+    margin: 14px 14px 14px 14px;
+}
+
+.head {
+    margin: 25px;
+}
+
+.text {
+    padding: 15px 170px;
+}
+
+.border {
+    border: 3px solid #990000;
+    color: black;
+    background-color: darkgray;
+}
+
+.bordercenter {
+    border: 3px solid #990000;
+    text-align: center;
+    color: black;
+    background-color: darkgray;
+}
+.borderright{
+    color: black;
+    background-color: darkgray;
+    float: right;
+    margin: 7px 0 15px 7px;
+    border: 3px solid #990000;
+
+}
+
+ul.hr {
+    margin: 34px 270px;
+    width: 202px;
+    border: 3px #900 solid;
+    padding: 20px;
+
+}ul.hr1 {
+    padding: 3px;
+}
+
+ul.hr li {
+    display: inline-block;
+    padding: 3px;
+    color: black;
+    background-color: darkgray;
+    box-sizing: border-box;
+}
+
+ul.hr1 li {
+    display: inline-block;
+    padding: 3px;
+    color: black;
+    background-color: darkgray;
+    box-sizing: border-box;
+}
+#id {
+    /*только для одной вещи*/
+}
