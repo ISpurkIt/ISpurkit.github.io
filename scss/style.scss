@@ -1,0 +1,861 @@
+$mainTextColor: white;
+$mainElementsColor: #00e0d0;
+
+body {
+  //background-image: url("../img/anime-girl-aqua-blue-4k-gu.jpg");
+  //  background-size: 100%, auto;
+  background: white;
+  margin: 0;
+}
+
+//.overlay{
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  width: 100%;
+//  height: 100%;
+//  z-index: -0.5;
+//  background-color: rgba(0,0,0,0.5); /*dim the background*/
+//}
+
+.mainStyle__button {
+  border: solid 1.5px $mainElementsColor;
+  border-radius: 5px;
+  padding: 7px;
+  transition: 1s;
+  height: max-content;
+  width: max-content;
+
+  a {
+    font-family: 'Hammersmith One', sans-serif;
+    text-decoration: none;
+    color: $mainElementsColor;
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+
+  &-black {
+    &:hover {
+      background-color: rgba(76, 72, 60, 0.75);
+    }
+  }
+}
+
+
+.header {
+  background-image: url("https://i.pinimg.com/originals/d2/c6/41/d2c6410e5041dee3d36748ac1c32f6ea.jpg");
+  background-size: cover;
+  background-position-x: center;
+
+  &__navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__mainContent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+
+.navbarLogo {
+  display: flex;
+  align-items: center;
+
+  &__img {
+    margin: 5px;
+    max-height: 45px;
+    max-width: 450px;
+  }
+
+  &__text {
+    font-size: 25px;
+    font-family: 'Roboto-Thin', sans-serif;
+    background: linear-gradient(135deg, $mainElementsColor 33%, #4aa3cc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.navbarNavigation {
+  &__menuItems {
+  }
+
+  &__menuItem {
+    display: inline;
+    margin: 0 5px 0 5px;
+
+    a {
+      margin: 5px;
+      padding: 5px;
+      font-size: 13px;
+      font-family: 'Roboto Black', sans-serif;
+      color: $mainTextColor;
+      text-decoration: none;
+      transition: 1s;
+    }
+
+    :hover {
+      border-radius: 5px;
+      color: $mainElementsColor;
+      border: solid 1px $mainElementsColor;
+      background-color: rgba(255, 255, 255, 0.75);
+    }
+  }
+}
+
+.mainText {
+  &__heading {
+    display: flex;
+    justify-content: center;
+    font-family: 'Playfair Display Black', serif;
+    color: $mainTextColor;
+  }
+
+  &__separator {
+    width: 50px;
+    color: $mainElementsColor;
+  }
+
+  &__text {
+    font-family: 'Roboto Light', sans-serif;
+    color: $mainTextColor;
+    max-width: 800px;
+    text-align: center;
+  }
+}
+
+.mainContent {
+  &__text {
+    margin: 100px 100px 50px;
+  }
+
+  &__dotnav {
+    margin: 125px;
+  }
+}
+
+.aboutTop {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+
+  &__img {
+    margin: 0 100px;
+    height: 200px;
+    width: 200px;
+  }
+
+  &__text {
+    max-width: 580px;
+
+    &-heading {
+      //font-size: 25pt;
+      font-family: 'Playfair Display', sans-serif;
+      color: #413d4b;
+      margin: 0 0 25px;
+    }
+
+    &-text {
+      font-family: 'Roboto Light', sans-serif;
+      color: #413d4b;
+      margin: 0px 0px 25px;
+    }
+  }
+}
+
+
+.aboutButton {
+  background-image: url("https://zabavnik.club/wp-content/uploads/funny_anime_pictures_3_21131858.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 150px;
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    color: white;
+    border: white 4px solid;
+    border-radius: 100px;
+    height: max-content;
+    width: max-content;
+    padding: 30px;
+
+    img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+  &__text {
+    font-family: 'Roboto Black', sans-serif;
+    color: $mainTextColor;
+  }
+}
+
+.expertise__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-header {
+    font-family: 'Playfair Display', sans-serif;
+    color: #413d4b;
+    margin: 0;
+  }
+
+  &-text {
+    font-family: 'Playfair Display', sans-serif;
+    color: #c6c4c9;
+  }
+
+  &-separator {
+    width: 50px;
+    color: #c6c4c9;
+  }
+}
+
+.expertise {
+  padding: 100px;
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.itemsTop {
+  display: flex;
+
+}
+
+.itemsBottom {
+  display: flex;
+}
+
+.itemText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__header {
+    margin: 0;
+    font-family: 'Roboto Black', sans-serif;
+    color: #413d4b;
+  }
+
+  &__text {
+    font-family: 'Roboto Light', sans-serif;
+    color: #333333;
+    text-align: center;
+    max-width: 280px;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    margin: 50px;
+  }
+}
+
+.team {
+  background-image: url("https://wallpaperplay.com/walls/full/2/b/a/20932.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  color: white;
+  padding: 100px;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-header {
+      font-family: 'Playfair Display', sans-serif;
+      margin: 0;
+    }
+
+    &-text {
+      font-family: 'Playfair Display', sans-serif;
+    }
+
+    &-separator {
+      width: 50px;
+      color: #c6c4c9;
+    }
+  }
+
+  &__items {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-text {
+      margin: 40px auto 30px;
+      font-family: 'Roboto Light', sans-serif;
+    }
+  }
+}
+
+
+.itemContainer {
+  border: #413d4b 1px solid;
+  border-radius: 0 0 10px 10px;
+  margin: 20px;
+  transition: 500ms;
+
+  img {
+    width: 250px;
+    height: 300px;
+  }
+
+  &:hover {
+    transform: translateY(-20px);
+    border: #ffffff 1px solid;
+  }
+
+  &__text {
+    text-align: center;
+
+    &-header {
+      font-family: 'Roboto Black', sans-serif;
+    }
+
+    &-text {
+      font-family: 'Roboto Light', sans-serif;
+      color: #c0c0c7;
+      margin-top: 0;
+    }
+  }
+}
+
+.team__bottom-text {
+  color: white;
+  font-family: 'Roboto Light', sans-serif;
+}
+
+$mainTextColor: white;
+$mainElementsColor: #00e0d0;
+
+body {
+  //background-image: url("../img/anime-girl-aqua-blue-4k-gu.jpg");
+  //  background-size: 100%, auto;
+  background: white;
+  margin: 0;
+}
+
+//.overlay{
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  width: 100%;
+//  height: 100%;
+//  z-index: -0.5;
+//  background-color: rgba(0,0,0,0.5); /*dim the background*/
+//}
+
+.mainStyle__button {
+  border: solid 1.5px $mainElementsColor;
+  border-radius: 5px;
+  padding: 7px;
+  transition: 1s;
+  height: max-content;
+  width: max-content;
+
+  a {
+    font-family: 'Hammersmith One', sans-serif;
+    text-decoration: none;
+    color: $mainElementsColor;
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.50);
+  }
+
+  &-black {
+    &:hover {
+      background-color: rgba(76, 72, 60, 0.50);
+    }
+  }
+}
+
+
+.header {
+  background-image: url("https://i.pinimg.com/originals/d2/c6/41/d2c6410e5041dee3d36748ac1c32f6ea.jpg");
+  background-size: cover;
+  background-position-x: center;
+
+  &__navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__mainContent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+
+.navbarLogo {
+  display: flex;
+  align-items: center;
+
+  &__img {
+    margin: 5px;
+    max-height: 45px;
+    max-width: 450px;
+  }
+
+  &__text {
+    font-size: 25px;
+    font-family: 'Roboto-Thin', sans-serif;
+    background: linear-gradient(135deg, $mainElementsColor 33%, #4aa3cc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.navbarNavigation {
+  &__menuItems {
+  }
+
+  &__menuItem {
+    display: inline;
+    margin: 0 5px 0 5px;
+
+    a {
+      margin: 5px;
+      padding: 5px;
+      font-size: 13px;
+      font-family: 'Roboto Black', sans-serif;
+      color: $mainTextColor;
+      text-decoration: none;
+      transition: 1s;
+    }
+
+    :hover {
+      border-radius: 5px;
+      color: $mainElementsColor;
+      border: solid 1px $mainElementsColor;
+      background-color: rgba(255, 255, 255, 0.50);
+    }
+  }
+}
+
+.mainText {
+  &__heading {
+    display: flex;
+    justify-content: center;
+    font-family: 'Playfair Display Black', serif;
+    color: $mainTextColor;
+  }
+
+  &__separator {
+    width: 50px;
+    color: $mainElementsColor;
+  }
+
+  &__text {
+    font-family: 'Roboto Light', sans-serif;
+    color: $mainTextColor;
+    max-width: 800px;
+    text-align: center;
+  }
+}
+
+.mainContent {
+  &__text {
+    margin: 100px 100px 50px;
+  }
+
+  &__dotnav {
+    margin: 125px;
+  }
+}
+
+.aboutTop {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+
+  &__img {
+    margin: 0 100px;
+    height: 200px;
+    width: 200px;
+  }
+
+  &__text {
+    max-width: 580px;
+
+    &-heading {
+      //font-size: 25pt;
+      font-family: 'Playfair Display', sans-serif;
+      color: #413d4b;
+      margin: 0 0 25px;
+    }
+
+    &-text {
+      font-family: 'Roboto Light', sans-serif;
+      color: #413d4b;
+      margin: 0px 0px 25px;
+    }
+  }
+}
+
+
+.aboutButton {
+  background-image: url("https://zabavnik.club/wp-content/uploads/funny_anime_pictures_3_21131858.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 150px;
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    color: white;
+    border: white 4px solid;
+    border-radius: 100px;
+    height: max-content;
+    width: max-content;
+    padding: 30px;
+
+    img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+  &__text {
+    font-family: 'Roboto Black', sans-serif;
+    color: $mainTextColor;
+  }
+}
+
+.expertise__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-header {
+    font-family: 'Playfair Display', sans-serif;
+    color: #413d4b;
+    margin: 0;
+  }
+
+  &-text {
+    font-family: 'Playfair Display', sans-serif;
+    color: #c6c4c9;
+  }
+
+  &-separator {
+    width: 50px;
+    color: #c6c4c9;
+  }
+}
+
+.expertise {
+  padding: 100px;
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.itemsTop {
+  display: flex;
+
+}
+
+.itemsBottom {
+  display: flex;
+}
+
+.itemText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__header {
+    margin: 0;
+    font-family: 'Roboto Black', sans-serif;
+    color: #413d4b;
+  }
+
+  &__text {
+    font-family: 'Roboto Light', sans-serif;
+    color: #333333;
+    text-align: center;
+    max-width: 280px;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    margin: 50px;
+  }
+}
+
+.team {
+  background-image: url("https://wallpaperplay.com/walls/full/2/b/a/20932.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  color: white;
+  padding: 100px 0;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-header {
+      font-family: 'Playfair Display', sans-serif;
+      margin: 0;
+    }
+
+    &-text {
+      font-family: 'Playfair Display', sans-serif;
+    }
+
+    &-separator {
+      width: 50px;
+      color: #c6c4c9;
+    }
+  }
+
+  &__items {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-text {
+      margin: 40px auto 30px;
+      font-family: 'Roboto Light', sans-serif;
+    }
+  }
+}
+
+
+.itemContainer {
+  border: #413d4b 1px solid;
+  border-radius: 0 0 10px 10px;
+  margin: 20px;
+  transition: 500ms;
+
+  img {
+    width: 250px;
+    height: 300px;
+  }
+
+  &:hover {
+    transform: translateY(-20px);
+    border: #ffffff 1px solid;
+    background: rgba(0, 0, 0, 0.50);
+  }
+
+  &__text {
+    text-align: center;
+
+    &-header {
+      font-family: 'Roboto Black', sans-serif;
+    }
+
+    &-text {
+      font-family: 'Roboto Light', sans-serif;
+      color: #c0c0c7;
+      margin-top: 0;
+    }
+  }
+}
+
+.team__bottom-text {
+  color: white;
+  font-family: 'Roboto Light', sans-serif;
+}
+
+.works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  margin: 100px 0;
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__items {
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+
+    &-top {
+      img {
+        margin: 0;
+        height: auto;
+        width: 200px;
+      }
+    }
+
+    &-bottom {
+      img {
+        margin: 0;
+        height: auto;
+        width: 200px;
+      }
+    }
+
+  }
+}
+
+.title {
+  &__header {
+    margin: 0 500px 0 0;
+    font-family: 'Playfair Display', sans-serif;
+  }
+
+  &__more {
+    font-family: 'Roboto Light', sans-serif;
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.content {
+  &__testimonials {
+    margin: 50px 0;
+  }
+
+  &__contact {
+    display: flex;
+  }
+}
+
+.testimonials {
+  background: #000;
+  padding: 75px 0;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Playfair Display', sans-serif;
+
+    &-dots {
+      font-size: 100pt;
+      margin: 0;
+      height: 100px;
+    }
+
+    &-text {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 0 50px;
+    }
+
+    &-heading {
+      margin: 0;
+      font-family: 'Roboto Black', sans-serif;
+    }
+
+    &-smallHeading {
+      font-family: 'Roboto Light', sans-serif;
+    }
+  }
+
+  &__img {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin: 5px;
+      height: 30px;
+      width: 30px;
+    }
+
+    :nth-of-type(3) {
+      height: 50px;
+      width: 50px;
+    }
+  }
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+
+  &__fields {
+    font-family: 'Roboto Light', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+
+    :nth-child(n) {
+      margin: 10px 0;
+      height: 25px;
+    }
+
+    :last-child {
+      resize: none;
+      margin-bottom: 15px;
+      height: 100px;
+      width: 394px;
+    }
+  }
+}
+.contactClients__img {
+  display: flex;
+  flex-direction: column;
+}
